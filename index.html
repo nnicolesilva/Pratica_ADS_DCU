@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TikTok do Amor</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <div class="app__videos">
+      <!-- video starts -->
+      <div class="video">
+        <video class="video__player" src="video1.mp4"></video>
+
+        <!-- sidebar -->
+        <div class="videoSidebar">
+          <div class="videoSidebar__button">
+            <i class="bi bi-heart"></i>
+            <div>12</div>
+          </div>
+
+          <div class="videoSidebar__button">
+            <i class="bi bi-chat-left"></i>
+            <div>23</div>
+          </div>
+
+          <div class="videoSidebar__button">
+            <i class="bi bi-share"></i>
+            <div>75</div>
+          </div>
+        </div>
+
+        <!-- footer -->
+        <div class="videoFooter">
+          <div class="videoFooter__text">
+            <h3>Nicole Soares</h3>
+            <p class="videoFooter__description"> 6 years moments</p>
+
+            <div class="videoFooter__ticker">
+              <i class="bi bi-music-note"></i>
+              <marquee>Aesthetic</marquee>
+            </div>
+          </div>
+          <img
+            src="https://thenounproject.com/api/private/icons/4311346/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0&token=gAAAAABkYQsH8YrTGD4x9HrCfvWU62nmOezQiKO0y0y8O5ReczbKqz8kuDMeQ_i9HRViLmc04XvV_osx-SErrs-9shNhjwGqXg%3D%3D.png"
+            alt=""
+            class="videoFooter__record"
+          />
+        </div>
+      </div>
+      <!-- video ends -->
+
+      <!-- video starts -->
+      <div class="video">
+        <video class="video__player" src="video2.mp4"></video>
+
+        <!-- sidebar -->
+        <div class="videoSidebar">
+          <div class="videoSidebar__button">
+            <i class="bi bi-heart"></i>
+            <div>12</div>
+          </div>
+
+          <div class="videoSidebar__button">
+            <i class="bi bi-chat-left"></i>
+            <div>23</div>
+          </div>
+
+          <div class="videoSidebar__button">
+            <i class="bi bi-share"></i>
+            <div>75</div>
+          </div>
+        </div>
+
+        <!-- footer -->
+        <div class="videoFooter">
+          <div class="videoFooter__text">
+            <h3>Nicole Soares</h3>
+            <p class="videoFooter__description">Best Momentes</p>
+
+            <div class="videoFooter__ticker">
+              <i class="bi bi-music-note"></i>
+              <marquee>Only Want U - Single</marquee>
+            </div>
+          </div>
+          <img
+            src="https://thenounproject.com/api/private/icons/4311346/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0&token=gAAAAABkYQsH8YrTGD4x9HrCfvWU62nmOezQiKO0y0y8O5ReczbKqz8kuDMeQ_i9HRViLmc04XvV_osx-SErrs-9shNhjwGqXg%3D%3D.png"
+            alt=""
+            class="videoFooter__record"
+          />
+        </div>
+      </div>
+      <!-- video ends -->
+    </div>
+
+    <script>
+      const videos = document.querySelectorAll('video');
+
+      for (const video of videos) {
+        video.addEventListener('click', function () {
+          console.log('clicked');
+          if (video.paused) {
+            video.play();
+          } else {
+            video.pause();
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
